@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+{% block content %}
+
+
+
+    <div class="container">
+        <div class="jumbotron">
+              <h1 class="display-4">Hello, world of programming!</h1>
+              <p class="lead">My name is Mario Doman - Python junior developer. On this website im trying to present my portfolio and my programming skills.</p>
+        </div>
+    </div>
+
+    <div class="container">
+          <div class="row">
+                <div class="col-sm">
+                  <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="data:image/png;base64,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" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Python Flask</h5>
+                    <p class="card-text">This site is created with <a href="https://flask.palletsprojects.com/en/2.0.x/" target="_blank">Python Flask.</a></p>
+                    <a href="#" class="btn btn-primary">GIT source</a>
+                  </div>
+                </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+                </div>
+          </div>
+    </div>
+
+    <!-- Content here -->
+
+
+
+
+
+
+
+
+    <h1>Index</h1>
+    <p class="important">
+    Welcome on my awesome homepage.
+    </p>
+{% endblock %}
+
